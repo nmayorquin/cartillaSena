@@ -1,0 +1,125 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/equipamiento-empezar-gimnasio.jpg?alt=media&token=c1b2b00a-0fe0-45f6-84b7-54dda4025155");
+    font-family: "Prociono" , sans-serif;
+    background-size: 100%;
+    background-repeat: repeat;  
+}
+
+
+/*UBICACIÓN ELEMENTOS DEL HEADER*/
+header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+
+/* DISEÑO DEL CONTENDOR DE LA CAJA DE LA IMAGEN CON EL TEXTO*/
+figure{
+width: 50%;
+position: relative;
+}
+
+/* DISEÑO DE LA IMAGEN*/
+.imagenSobreMi, .imagenEstrategia, .imagenPausas{ /*tamaño de la imagen*/
+    width: 500px;
+     height: 402px;
+}
+
+.imagenTest{
+    width: 250px;
+    height: 400px;
+}
+
+
+/* DISEÑO DEL TEXTO QUE ACOMPAÑA LA IMAGEN*/
+.estiloTextoImagen{ /*TUVE QUE VOLVER A PASAR EL TIPO DE LETRA A TRABAJAR*/
+    font-family: inherit;
+    font-size:40px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+
+
+.seccion-izq__Pausa:hover, .seccion-izq__estrategia:hover, .seccion-izq__sobreMi:hover, .seccion-izq__test:hover{
+    color: #3cf655;
+    transition: background-color .3s;
+    
+}
+
+/*DISEÑOS PARA EL MODAL*/
+.modal, .modalAboutMe, .modalEstrategias, .modalPausasActivas{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #540455bd;/*bd da transparencia*/
+    display: flex;
+    opacity:0;
+    pointer-events:none;
+}
+
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+}
+
+
+.modal__contenedorMe, .modal__contenedorTest, .modal__contenedorEstrategia, .modal__contenedorPausa{
+    margin: auto; /*su contenedor padre tiene el display flex, así que con auto se centra todo el contenido*/
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: white;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    border-radius: 5px;
+}
+
+
+
+.modal__titulo{
+    font-size: 2.5rem;
+}
+
+.modal__salida, .modal__salidaSobreMi, .modal__salidaEstrategia, .modal__salidaPausaActiva{
+    text-decoration: none;
+    color: black;
+    background-color: #A2F4CD;
+    padding: 1em 3em;
+    border: 1px solid;
+    border-radius: 10px;
+    display:inline-block;
+    transition: background-color .3s;
+}
+
+.modal__salida:hover{
+    color: #14FA39;
+    background-color: white;
+    font-size: 20px;
+
+}
+
+.imagen_modalTest{
+    width: 550px;
+    height: 600px;
+}
+
+
+
+
